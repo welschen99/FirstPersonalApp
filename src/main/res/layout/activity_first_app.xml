@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fistApp.aaa.FirstAppActivity">
+    <!--match_parent ocupa todo lo que pueda-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escribe tu Nombre"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Padre"
+        app:layout_constraintStart_toStartOf="@+id/Padre" />
+    <!--wrap_content:ocupa lo minimo indispensable-->
+    <!--para tamanio de fuente: se usa el sp-->
+    <!--        android:layout_gravity="center"-->
+
+    <View
+        android:id="@+id/Padre"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--    Algo totalmente centrado y anclado-->
+
+    <View
+        android:id="@+id/Hijo"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/Padre"
+        app:layout_constraintStart_toEndOf="@+id/Padre" />
+
+    <!--    Algo totalmente centrado y anclado-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:background="@color/teal_200"
+        android:text="Pulsar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etName"
+        android:layout_width="210dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--El singleLine y maxLine hace responsivo el input -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
