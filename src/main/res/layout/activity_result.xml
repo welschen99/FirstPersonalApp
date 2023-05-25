@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fistApp.aaa.ResultActivity">
+    tools:context=".fistApp.Home.ResultActivity">
 
     <TextView
         android:id="@+id/tvResult"

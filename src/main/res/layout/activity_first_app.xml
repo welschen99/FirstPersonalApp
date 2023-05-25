@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fistApp.aaa.FirstAppActivity">
+    tools:context=".fistApp.Home.FirstAppActivity">
     <!--match_parent ocupa todo lo que pueda-->
 
     <TextView

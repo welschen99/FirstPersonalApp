@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary">#007bff</color>
+    <color name="success">#28a745</color>
+    <color name="secondary">#6c757d</color>
+    <color name="cardViewSelect">#262737</color>
+    <color name="cardViewNotSelect">#161729</color>
+    <color name="background_app">#0f0e1b</color>
+
 </resources>
