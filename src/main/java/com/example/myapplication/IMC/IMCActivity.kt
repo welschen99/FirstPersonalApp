@@ -25,7 +25,7 @@ class IMCActivity : AppCompatActivity() {
     private lateinit var viewMale:CardView//declaro el componente como privado
     private lateinit var viewFemale:CardView
     private lateinit var tvHeight:TextView
-    private lateinit var rsLiner:RangeSlider
+    private lateinit var rsHeight:RangeSlider
     private lateinit var btnSubtractWeight: FloatingActionButton
     private lateinit var btnPlusWeight: FloatingActionButton
     private lateinit var btnSubtractAge: FloatingActionButton
@@ -51,7 +51,7 @@ class IMCActivity : AppCompatActivity() {
         viewMale = findViewById(R.id.viewMale)
         viewFemale = findViewById(R.id.viewFemale)
         tvHeight = findViewById(R.id.tvHeight)
-        rsLiner = findViewById(R.id.rsHeight)
+        rsHeight = findViewById(R.id.rsHeight)
         btnPlusWeight = findViewById(R.id.btnPlusWeight)
         btnSubtractWeight = findViewById(R.id.btnSubtractWeight)
         btnPlusAge = findViewById(R.id.btnPlusAge)
@@ -69,9 +69,9 @@ class IMCActivity : AppCompatActivity() {
             changeGender()
             setGenderColor()
         }
-        rsLiner.addOnChangeListener {_,value,_ ->
+        rsHeight.addOnChangeListener {_,value,_ ->
             val df = DecimalFormat("#.##")//saco los decimales
-            val currentHeight = df.format(value).toInt()
+            currentHeight = df.format(value).toInt()
             tvHeight.text = "$currentHeight cm"//devuelvo el valor rexto
         }
         btnPlusWeight.setOnClickListener {

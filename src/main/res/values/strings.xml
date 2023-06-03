@@ -6,6 +6,21 @@
     <string name="weight">PESO</string>
     <string name="age">EDAD</string>
     <string name="calculate">CALCULAR</string>
-    <string name="result">Tu resultado de IMC es:</string>
+    <string name="result">Tu resultado de IMC:</string>
     <string name="recalculate">RECALCULAR</string>
+
+    <string name="error">ERROR</string>
+
+    <string name="title_bajo">BAJO PESO</string>
+    <string name="description_bajo">Estas por debajo de tu peso</string>
+
+    <string name="title_normal">PESO NORMAL</string>
+    <string name="description_normal">Estas en el peso exacto</string>
+
+    <string name="title_sobrepeso">PESO EXEDIDO</string>
+    <string name="description_sobrepeso">Estas exedido de peso</string>
+
+    <string name="title_obesidad">OBESIDAD</string>
+    <string name="description_obesidad">Recurre a un profesional de la salud</string>
+
 </resources>
